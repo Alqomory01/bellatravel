@@ -10,12 +10,12 @@ return(
     <div className="flex flex-col lg:flex-row items-center justify-between w-full">
      
         <div className="mt-12 text-black px-4 w-full lg:w-[60%] sm:px-8 lg:px-20 py-10 pb-16 ">
-          <h3 className="text-blue ">We are very Experienced</h3>
+          <h3 className="text-blue font-bold mb-4">We are very Experienced</h3>
           <h3>About BellaMaria Travels and Tours</h3>
           <p>About BellaMaria Travels and Tours
 Your Trusted Partner in Seamless Travel
 
-At BellaMaria Travels and Tours, we believe that travel is more than just moving from one destination to another – it’s about creating memories that last a lifetime.
+At BellaMaria Travels and Tours, we believe that travel is more than just moving from one destination to another – it&apos;s about creating memories that last a lifetime.
 
 Founded in 2009, we are a proudly IATA-certified and accredited travel agency, backed by the International Air Transport Association (IATA). With over 16 years of excellence, we have built a strong reputation in the travel and tourism industry for reliability, professionalism, and world-class service delivery.
 
@@ -48,7 +48,7 @@ Founded in 2009, we are a proudly IATA-certified and accredited travel agency, b
           {/* Right Content */}
           <div className="p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Don't miss a great deal
+              Don&apos;t miss a great deal
             </h2>
 
             <p className="text-gray-600 mb-6">
@@ -93,11 +93,11 @@ Founded in 2009, we are a proudly IATA-certified and accredited travel agency, b
           </h3>
     
           <p className="pb-6 sm:pb-10 text-sm sm:text-base leading-relaxed">
-            Experience the world’s most stunning destinations with Bellamaria Travels. Our dedicated team of travel experts creates extraordinary journeys, meticulously planning every detail for an unforgettable adventure.
+            Experience the world&apos;s most stunning destinations with Bellamaria Travels. Our dedicated team of travel experts creates extraordinary journeys, meticulously planning every detail for an unforgettable adventure.
           </p>
     
           <p className="text-sm sm:text-base leading-relaxed">
-            Established in 2009, Bellamaria Travels & Tours Ltd began operations that same year and proudly earned accreditation from the International Air Transport Association (IATA). From the very beginning, we’ve built lasting partnerships with top airlines and travel industry stakeholders, always placing our customers at the heart of everything we do. At Bellamaria Travels, delivering exceptional service and unforgettable travel experiences isn’t just our promise — it’s our passion.
+            Established in 2009, Bellamaria Travels & Tours Ltd began operations that same year and proudly earned accreditation from the International Air Transport Association (IATA). From the very beginning, we&apos;ve built lasting partnerships with top airlines and travel industry stakeholders, always placing our customers at the heart of everything we do. At Bellamaria Travels, delivering exceptional service and unforgettable travel experiences isn&apos;t just our promise — it&apos;s our passion.
           </p>
         </div>
     
