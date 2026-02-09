@@ -25,6 +25,7 @@ export default function Header () {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 const [open, setOpen] = useState(false);
+const [menuOpen, setMenuOpen] = useState(false);
     return(
         <header className="w-full">
 
@@ -104,6 +105,31 @@ const [open, setOpen] = useState(false);
       </button></Link>
         <Link className="hover:text-[#0356a9]" href="/contact">Contact</Link>
       </nav>
+      {/* mobile dropdown nav */}
+      {menuOpen && (
+  <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-md z-50">
+    <nav className="flex flex-col gap-4 p-6 text-gray-800 font-semibold">
+
+      <Link onClick={() => setMenuOpen(false)} href="/">Home</Link>
+      <Link onClick={() => setMenuOpen(false)} href="/about">About Us</Link>
+      <Link onClick={() => setMenuOpen(false)} href="/room">Room</Link>
+      <Link onClick={() => setMenuOpen(false)} href="/blog">Blog</Link>
+
+      <button
+        onClick={() => {
+          setBookingOpen(true);
+          setMenuOpen(false);
+        }}
+        className="text-left hover:text-[#0356a9]"
+      >
+        Manage Booking
+      </button>
+
+      <Link onClick={() => setMenuOpen(false)} href="/contact">Contact</Link>
+
+    </nav>
+  </div>
+)}
 
       {/* Right Actions */}
       <div className="flex items-center gap-3 sm:gap-4">
@@ -137,7 +163,7 @@ const [open, setOpen] = useState(false);
         </Link>
 
         {/* Mobile Menu Button (Optional Hook) */}
-        <button className="lg:hidden text-2xl">
+        <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden text-2xl">
           ☰
         </button>
       </div>
