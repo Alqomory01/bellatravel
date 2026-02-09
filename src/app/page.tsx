@@ -685,7 +685,7 @@ export default function Home() {
 
         {/* Details */}
         <div className="flex-1">
-          <h3 className="text-lg sm:text-xl font-semibold">
+          <h3 className="text-lg text-black sm:text-xl font-semibold">
             Classic Room
           </h3>
           <ul className="text-gray-600 mt-2 space-y-1 text-sm sm:text-base">
@@ -698,7 +698,7 @@ export default function Home() {
 
         {/* Price */}
         <div className="text-left md:text-right md:w-1/4">
-          <p className="text-xl sm:text-2xl font-bold">$375</p>
+          <p className="text-xl text-black sm:text-2xl font-bold">$375</p>
           <p className="text-gray-500 text-sm">/ Per Night</p>
         </div>
 
@@ -716,7 +716,7 @@ export default function Home() {
       {/* Room Item */}
       <div className="flex flex-col md:flex-row gap-6 md:gap-4 border-b pb-6">
         <div className="flex-1">
-          <h3 className="text-lg sm:text-xl font-semibold">
+          <h3 className="text-lg text-black sm:text-xl font-semibold">
             Bogota Colombia
           </h3>
           <ul className="text-gray-600 mt-2 space-y-1 text-sm sm:text-base">
@@ -745,7 +745,7 @@ export default function Home() {
       {/* Room Item */}
       <div className="flex flex-col md:flex-row gap-6 md:gap-4 pb-6">
         <div className="flex-1">
-          <h3 className="text-lg sm:text-xl font-semibold">
+          <h3 className="text-lg text-black sm:text-xl font-semibold">
             Cristales River Trip
           </h3>
           <ul className="text-gray-600 mt-2 space-y-1 text-sm sm:text-base">
@@ -757,14 +757,14 @@ export default function Home() {
         </div>
 
         <div className="text-left md:text-right md:w-1/4">
-          <p className="text-xl sm:text-2xl font-bold">$1,400</p>
+          <p className="text-xl text-black sm:text-2xl font-bold">$1,400</p>
           <p className="text-gray-500 text-sm">/ Per Night</p>
         </div>
 
         <div className="md:w-1/4">
           <a
             href="#"
-            className="inline-block w-full md:w-fit text-center px-6 py-3 border border-black rounded-lg font-medium hover:bg-black hover:text-white transition"
+            className="inline-block w-full text-black md:w-fit text-center px-6 py-3 border border-black rounded-lg font-medium hover:bg-black hover:text-white transition"
           >
             Book Rooms →
           </a>
@@ -779,7 +779,7 @@ export default function Home() {
 <AnimatedSection>
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold mb-10">
+        <h2 className="text-3xl text-black md:text-4xl font-bold mb-10">
           Latest Travel Articles
         </h2>
 
@@ -803,8 +803,8 @@ export default function Home() {
               {/* Blog Content */}
               <div className="p-5 flex flex-col h-full">
                 <p className="text-gray-500 text-sm">{post.date}</p>
-                <h3 className="text-lg font-semibold mt-2">{post.title}</h3>
-                <p className="text-gray-600 text-sm mt-2 flex-grow">
+                <h3 className="text-lg font-semibold mt-2 text-black">{post.title}</h3>
+                <p className="text-gray-600 text-sm mt-2 grow">
                   {post.excerpt}
                 </p>
 

@@ -77,7 +77,7 @@ const [menuOpen, setMenuOpen] = useState(false);
       isSticky ? "fixed top-0 left-0 right-0 shadow-md" : ""
     }`}
   >
-    <div className="max-w-7xl mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
+    <div className="relative max-w-7xl mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
 
       {/* Logo */}
       <Link href="/" className="flex items-center">
@@ -107,7 +107,7 @@ const [menuOpen, setMenuOpen] = useState(false);
       </nav>
       {/* mobile dropdown nav */}
       {menuOpen && (
-  <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-md z-50">
+  <div className="lg:hidden absolute top-full left-0 w-screen bg-white shadow-lg z-999">
     <nav className="flex flex-col gap-4 p-6 text-gray-800 font-semibold">
 
       <Link onClick={() => setMenuOpen(false)} href="/">Home</Link>

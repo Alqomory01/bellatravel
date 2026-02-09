@@ -76,7 +76,7 @@ export default function Footer (){
             />
             <button
               type="submit"
-              className="bg-pink-600 text-white px-4 rounded-r-lg hover:bg-pink-700"
+              className="bg-blue-600 text-white px-4 rounded-r-lg hover:bg-pink-700"
             >
               Subscribe
             </button>
@@ -103,7 +103,7 @@ export default function Footer (){
         <p>Copyright © 2024 <span className="font-semibold">Bellamariatravels.</span> All Rights Reserved.</p>
         <p>
           Developed by:{" "}
-          <a href="#" className="text-pink-500 hover:underline">
+          <a href="#" className="text-blue-600 hover:underline">
             Alqomorytech
           </a>
         </p>
