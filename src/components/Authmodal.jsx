@@ -10,7 +10,7 @@ return(
             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4">
       <div className="relative flex flex-col md:flex-row
       w-full max-w-4xl
-      h-auto md:h-[500px]
+      h-auto md:h-500px
       bg-white rounded-xl overflow-hidden">
 
         {/* LEFT SECTION */}
@@ -43,7 +43,7 @@ return(
             ×
           </button>
 
-          <h2 className="text-xl sm:text-2xl font-semibold mb-2">
+          <h2 className="text-xl text-black sm:text-2xl font-semibold mb-2">
             Sign In / Register
           </h2>
 
@@ -67,7 +67,7 @@ return(
             <div className="flex-1 h-px bg-gray-300" />
           </div>
 
-          <button className="w-full flex items-center justify-center gap-2 border py-3 rounded-md hover:bg-gray-50">
+          <button className="w-full text-black flex items-center justify-center gap-2 border py-3 rounded-md hover:bg-gray-50">
             <img src="/images/google_logo.png" alt="Google" className="w-5 h-5" />
             Continue with Google
           </button>
