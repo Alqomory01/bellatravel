@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
-import { MdSmokingRooms } from "react-icons/md";
+// import { MdSmokingRooms } from "react-icons/md";
 import { IoSearch, IoAdd } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -210,7 +210,7 @@ export default function Home() {
         {["oneway", "roundtrip", "multicity"].map((type) => (
           <button
             key={type}
-            onClick={() => setTripType(type as any)}
+            onClick={() => setTripType(type as "oneway" | "roundtrip" | "multicity")}
             className={`px-4 py-2 rounded-lg text-sm font-medium transition ${
               tripType === type
                 ? "bg-blue-800 text-white"

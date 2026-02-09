@@ -1,9 +1,16 @@
 "use client";
 import { createSlice } from '@reduxjs/toolkit';
 
+interface UserInfo {
+  id: string;
+  name: string;
+  email: string;
+  role: string;
+ 
+}
 interface UserState {
   isLoggedIn: boolean;
-  userInfo: any;
+  userInfo:  UserInfo | null;
 }
 
 const initialState: UserState = {
