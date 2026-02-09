@@ -152,7 +152,7 @@ and we will be happy to help</p>
 
         {/* Message */}
         <textarea
-          rows="6"
+          rows={6}
           placeholder="Your Message"
           className="w-full bg-transparent border border-gray-500 rounded-2xl px-6 py-4 placeholder-gray-300 focus:outline-none focus:border-blue-400 resize-none"
         />
