@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 export default function Footer (){
     return(
-        <footer className="bg-[#3b2c35] text-gray-200 py-12">
+        <footer className="bg-[#000000] text-gray-200 py-12">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Left Section */}
         <div>
@@ -13,7 +13,7 @@ export default function Footer (){
           <p className="text-sm uppercase font-semibold text-gray-300">
             Call For Reservations
           </p>
-          <p className="text-2xl font-bold text-yellow-400 mb-2">
+          <p className="text-2xl font-bold text-blue-500 mb-2">
             +234 805 236 0408
           </p>
           <a
@@ -99,7 +99,7 @@ export default function Footer (){
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-600 mt-10 pt-6 text-center text-sm flex flex-col md:flex-row justify-between items-center px-6">
+      <div className="border-t border-gray-600 mt-10 mx-auto  pt-6 text-center text-sm flex flex-col md:flex-row justify-between items-center px-12">
         <p>Copyright © 2024 <span className="font-semibold">Bellamariatravels.</span> All Rights Reserved.</p>
         <p>
           Developed by:{" "}

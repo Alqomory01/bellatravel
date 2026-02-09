@@ -6,8 +6,11 @@ import { CgProfile } from "react-icons/cg";
 import Image from "next/image";
 import { useState,useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
+import ManageBookingModal from "../booking"
+// import  poppins  from '../../app/layout';
 export default function Header () {
     const [isSticky, setIsSticky] = useState(false);
+    const [bookingOpen, setBookingOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,78 +24,128 @@ export default function Header () {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+const [open, setOpen] = useState(false);
     return(
-        <header>
-            {/* top bar */}
-<div className="bg-white text-sm py-5 px-4 flex justify-between items-center max-w-7xl mx-auto">
-        <div className="flex gap-4 text-gray-700">
-          <div className="flex items-center justify-center leading-none gap-1">
-            <span><MdOutlineMailOutline className="text-lg" /></span>
-            <a href="mailto:bellamariatravels.com">bellamariatravels.com</a>
-          </div>
-          <div className="flex items-center gap-1 leading-none">
-            <span><MdCall className="text-lg" /></span>
-            <span>+(805) 236 0408</span>
-          </div>
+        <header className="w-full">
+
+  {/* Top Bar */}
+  <div className="bg-white text-xs sm:text-sm py-3 sm:py-4 px-4">
+    <div className="max-w-7xl mx-auto flex flex-col sm:flex-row gap-3 sm:gap-0 justify-between items-center">
+
+      {/* Left Info */}
+      <div className="flex justify-between sm:flex-row gap-2 sm:gap-6 text-gray-700">
+        <div className="flex items-center gap-1">
+          <MdOutlineMailOutline className="text-base sm:text-lg" />
+          <a href="mailto:bellamariatravels.com" className="hover:text-pink-600">
+            bellamariatravels.com
+          </a>
         </div>
-        <div className="flex gap-4 items-center">
-          <select className="border-none bg-transparent focus:outline-none text-gray-700">
-            <option>EN</option>
-            <option>Italy</option>
-            <option>France</option>
-            <option>Qatar</option>
-          </select>
-          <Link href="/login" className="flex items-center gap-1 text-gray-700 leading-none">
-            <span><CgProfile className="text-lg" /></span>
-            <span>Login</span>
-          </Link>
+
+        <div className="flex items-center gap-1">
+          <MdCall className="text-base sm:text-lg" />
+          <span>+(805) 236 0408</span>
         </div>
       </div>
-      <hr className="border-gray-900"/>
-{/* Main Navbar */}
-<div className={`w-full z-50 transition-all duration-300 bg-white ${isSticky ? 'fixed top-0 left-0 right-0 shadow-md' : ''}`}>
-        <div className="flex justify-between items-center px-4 py-3 md:py-4 max-w-7xl mx-auto">
-          {/* Logo */}
-          <Link href="/" className="flex items-center text-2xl font-bold text-pink-600">
-            <span className="text-3xl"><Image src="/images/logo.png" alt="bella maria logo" width={120} height={60}/></span>
-            
-          </Link>
 
-          {/* Nav Links */}
-          <nav className="hidden md:flex gap-6 text-gray-800 text-lg">
-            <Link href="/">Home</Link>
-            <Link href="/about">About Us</Link>
-            <Link href="/room">Room</Link>
-            <Link href="/gallery">Gallery</Link>
-            <Link href="/blog">Blog</Link>
-            <Link href="/pages">Pages</Link>
-            <Link href="/contact">Contact</Link>
-          </nav>
+      {/* Right Controls */}
+      <div className="flex items-center gap-4">
+        <select className="bg-transparent text-gray-700 focus:outline-none text-xs sm:text-sm">
+          <option>EN</option>
+          <option>Italy</option>
+          <option>France</option>
+          <option>Qatar</option>
+        </select>
 
-          {/* Right Side */}
-          <div className="flex items-center gap-4">
-            <div className="hidden md:flex items-center gap-2 border px-2 py-1 rounded-md">
-              <span><FaSearch /></span>
-              <input
-                type="text"
-                placeholder="Search..."
-                className="outline-none border-none text-sm bg-transparent"
-              />
-            </div>
-            <Link
-              href="/booking"
-              className="bg-black text-white px-4 py-2 rounded-full text-sm font-semibold"
-            >
-              Book Now
-            </Link>
+        <Link
+          href="/login"
+          className="flex items-center gap-1 text-gray-700 hover:text-shadow-blue-600"
+        >
+          <CgProfile className="text-base sm:text-lg" />
+          <span className="text-xs sm:text-sm">Login</span>
+        </Link>
+      </div>
+
+    </div>
+  </div>
+
+  <hr className="border-gray-200" />
+
+  {/* Main Navbar */}
+  <div
+    className={`w-full z-50 bg-white transition-all duration-300 ${
+      isSticky ? "fixed top-0 left-0 right-0 shadow-md" : ""
+    }`}
+  >
+    <div className="max-w-7xl mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
+
+      {/* Logo */}
+      <Link href="/" className="flex items-center">
+        <Image
+          src="/images/logo.png"
+          alt="Bella Maria Travels Logo"
+          width={110}
+          height={55}
+          className="w-auto h-10 sm:h-12"
+        />
+      </Link>
+
+      {/* Desktop Nav */}
+      <nav className="hidden lg:flex gap-6 text-gray-800 text-base font-semibold">
+        <Link className="hover:text-[#0356a9]" href="/">Home</Link>
+        <Link className="hover:text-[#0356a9]" href="/about">About Us</Link>
+        <Link className="hover:text-[#0356a9]" href="/room">Room</Link>
+        {/* <Link className="hover:text-[#0356a9]" href="/gallery">Gallery</Link> */}
+        <Link className="hover:text-[#0356a9]" href="/blog">Blog</Link>
+        <Link className="hover:text-[#0356a9]" href="/bookings">  <button
+        onClick={() => setBookingOpen(true)}
+        className="font-medium"
+      >
+        Manage Booking
+      </button></Link>
+        <Link className="hover:text-[#0356a9]" href="/contact">Contact</Link>
+      </nav>
+
+      {/* Right Actions */}
+      <div className="flex items-center gap-3 sm:gap-4">
+
+        {/* Search (Desktop Only) */}
+        <div
+          className="hidden md:flex items-center gap-2 cursor-pointer"
+          onClick={() => setOpen(true)}
+        >
+          <FaSearch className="text-lg" />
+          <div
+            className={`overflow-hidden transition-all duration-300 ${
+              open ? "w-40 border-b border-gray-400" : "w-0"
+            }`}
+          >
+            <input
+              type="text"
+              placeholder="Search..."
+              className="bg-transparent text-sm outline-none px-2"
+              onBlur={() => setOpen(false)}
+            />
           </div>
         </div>
-      </div>
-      
-     
-     
 
-        </header>
+        {/* CTA */}
+        <Link
+          href="/#booking-form"
+          className="bg-black text-white px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold hover:bg-gray-900 transition"
+        >
+          Book Now
+        </Link>
+
+        {/* Mobile Menu Button (Optional Hook) */}
+        <button className="lg:hidden text-2xl">
+          ☰
+        </button>
+      </div>
+
+    </div>
+  </div>
+<ManageBookingModal isOpen={bookingOpen} onClose={() => setBookingOpen(false)} />
+</header>
+
     )
 }
