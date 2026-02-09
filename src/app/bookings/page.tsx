@@ -84,7 +84,7 @@ export default function Bookings (){
                   {["oneway", "roundtrip", "multicity"].map((type) => (
                     <button
                       key={type}
-                      onClick={() => setTripType(type as any)}
+                      onClick={() => setTripType(type as "oneway" | "roundtrip" | "multicity")}
                       className={`px-4 py-2 rounded-lg text-sm font-medium transition ${
                         tripType === type
                           ? "bg-blue-800 text-white"

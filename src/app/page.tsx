@@ -812,7 +812,7 @@ export default function Home() {
                 <div className="flex items-center justify-between mt-4 pt-4 border-t">
                   <div className="flex items-center space-x-2">
                     <Image
-                      src={post.authorImg}
+                      src={post.img}
                       alt={post.author}
                       width={30}
                       height={30}
