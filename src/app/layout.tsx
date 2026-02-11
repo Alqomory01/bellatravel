@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 
 
@@ -40,6 +41,7 @@ export default function RootLayout({
        <Providers>
         <Header/>
         {children}
+        <WhatsAppFloat />
         <Footer/>
         </Providers> 
       </body>
