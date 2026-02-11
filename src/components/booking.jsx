@@ -5,10 +5,10 @@ if (!isOpen) return null;
         <div>
 
              <div className="fixed inset-0 z-50 flex items-end md:items-center justify-center bg-black/60 px-4">
-      <div className="relative flex flex-col md:flex-row w-full max-w-5xl bg-white rounded-xl overflow-hidden">
+      <div className="relative flex flex-col md:flex-row w-full max-w-5xl bg-white rounded-xl overflow-hidden max-h-[90svh] md:max-h-[90vh]">
 
         {/* LEFT SECTION */}
-        <div className="w-full md:w-1/2 p-6 sm:p-8 overflow-y-auto">
+        <div className="w-full md:w-1/2 p-6 sm:p-6 overflow-y-auto">
           {/* Close */}
           <button
             onClick={onClose}
@@ -70,7 +70,7 @@ if (!isOpen) return null;
         </div>
 
         {/* RIGHT SECTION */}
-        <div className="w-full md:w-1/2 bg-[#20343c] text-white p-6 overflow-y-auto">
+        <div className="w-full md:w-1/2 bg-[#20343c] text-white p-4 sm:p-6 overflow-y-auto">
           <ul className="space-y-5 text-lg">
             {[
               "Download your e-tickets",
