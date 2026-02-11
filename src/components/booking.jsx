@@ -4,11 +4,11 @@ if (!isOpen) return null;
     return(
         <div>
 
-             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4">
+             <div className="fixed inset-0 z-50 flex items-end md:items-center justify-center bg-black/60 px-4">
       <div className="relative flex flex-col md:flex-row w-full max-w-5xl bg-white rounded-xl overflow-hidden">
 
         {/* LEFT SECTION */}
-        <div className="w-full md:w-1/2 p-6 sm:p-8">
+        <div className="w-full md:w-1/2 p-6 sm:p-8 overflow-y-auto">
           {/* Close */}
           <button
             onClick={onClose}
@@ -19,10 +19,10 @@ if (!isOpen) return null;
 
           <div className="flex items-center gap-3 mb-4">
             <span className="text-3xl">🗓️</span>
-            <h2 className="text-xl font-semibold">Manage your booking</h2>
+            <h2 className="text-lg md:text-xl font-semibold">Manage your booking</h2>
           </div>
 
-          <p className="text-sm text-gray-600 mb-6">
+          <p className="text-sm md:text-base text-gray-600">
             If you have an existing booking with us please enter your booking
             details below to get tailored advice
           </p>
@@ -70,7 +70,7 @@ if (!isOpen) return null;
         </div>
 
         {/* RIGHT SECTION */}
-        <div className="w-full md:w-1/2 bg-[#20343c] text-white p-8">
+        <div className="w-full md:w-1/2 bg-[#20343c] text-white p-6 overflow-y-auto">
           <ul className="space-y-5 text-lg">
             {[
               "Download your e-tickets",
