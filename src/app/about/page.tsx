@@ -11,7 +11,6 @@ return(
      
         <div className="mt-12 text-black px-4 w-full lg:w-[60%] sm:px-8 lg:px-20 py-10 pb-16 ">
           <h3 className="text-blue font-bold mb-4">We are very Experienced</h3>
-          <h3>About BellaMaria Travels and Tours</h3>
           <p>About BellaMaria Travels and Tours
 Your Trusted Partner in Seamless Travel
 

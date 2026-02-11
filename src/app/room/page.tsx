@@ -119,7 +119,7 @@ export default function Room(){
                      )}
            
                      {/* Button */}
-                     <div className="transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                     <div className="transform translate-y-0 md:translate-y-full translate-y-full md:group-hover:translate-y-0 transition-transform duration-300">
                        {room.description && (
                          <button className="mt-3 bg-white text-gray-900 px-4 py-2 text-sm rounded shadow hover:bg-amber-900 hover:text-white transition">
                            Book Now
