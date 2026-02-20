@@ -630,7 +630,7 @@ export default function Home() {
 
     {/* Right Content */}
     <div className="p-6 sm:p-8 flex flex-col justify-center">
-      <p className="text-pink-700 font-semibold text-sm sm:text-base">
+      <p className="text-blue-700 font-semibold text-sm sm:text-base">
         Exclusive Offer
       </p>
 
@@ -648,7 +648,7 @@ export default function Home() {
       </div>
 
       {/* Divider */}
-      <div className="w-12 border-b-2 border-pink-600 my-4"></div>
+      <div className="w-12 border-b-2 border-blue-900 my-4"></div>
 
       {/* Description */}
       <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
@@ -657,7 +657,7 @@ export default function Home() {
       </p>
 
       {/* Button */}
-      <button className="mt-6 w-full sm:w-fit px-6 py-3 border border-pink-700 text-pink-700 font-semibold rounded hover:bg-pink-700 hover:text-white transition">
+      <button className="mt-6 w-full sm:w-fit px-6 py-3 border border-blue-700 text-blue-800 font-semibold rounded hover:bg-pink-700 hover:text-white transition">
         Book Now
       </button>
     </div>
