@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Footer (){
     return(
         <footer className="bg-[#000000] text-gray-200 py-12">
-      <div className="px-4 sm:px-8 lg:px-20 py-10 pb-16 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="px-4 sm:px-8 lg:px-20 py-4  grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Left Section */}
         <div>
           <h2 className="text-2xl font-bold mb-3">Bellamariatravels.</h2>
@@ -98,7 +98,7 @@ export default function Footer (){
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-600 px-4 sm:px-8 lg:px-20 py-10 pb-16 mt-10 mx-auto  pt-6 text-center text-sm flex flex-col md:flex-row justify-between items-center">
+      <div className="border-t border-gray-600 px-4 sm:px-8 lg:px-20  mt-10 mx-auto  pt-6 text-center text-sm flex flex-col md:flex-row justify-between items-center">
         <p>Copyright © {new Date().getFullYear()}{" "} <span className="font-semibold">Bellamariatravels.</span> All Rights Reserved.</p>
         <p>
           Developed by:{" "}
