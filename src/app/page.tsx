@@ -671,7 +671,7 @@ export default function Home() {
   <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
     {/* Heading */}
-    <h4 className="text-pink-600 font-semibold text-sm sm:text-base">
+    <h4 className="text-blue-600 font-semibold text-sm sm:text-base">
       Our Room Prices
     </h4>
     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-8 sm:mb-10">
@@ -735,7 +735,7 @@ export default function Home() {
         <div className="md:w-1/4">
           <a
             href="#"
-            className="inline-block w-full md:w-fit text-center px-6 py-3 bg-pink-700 text-white rounded-lg font-medium hover:bg-pink-800 transition"
+            className="inline-block w-full md:w-fit text-center px-6 py-3 bg-blue-700 text-white rounded-lg font-medium hover:bg-pink-800 transition"
           >
             Book Rooms →
           </a>
