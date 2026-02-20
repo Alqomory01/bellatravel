@@ -75,8 +75,8 @@ export default function Blog (){
     return(
 <div>
 <AnimatedSection>
-<section className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4">
+<section className="mt-12 px-4 sm:px-8 lg:px-20 pb-16 bg-gray-50">
+      <div className="">
         <h2 className="text-3xl md:text-4xl font-bold mb-10">
           Latest Travel Articles
         </h2>

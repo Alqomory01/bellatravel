@@ -115,10 +115,10 @@ and we will be happy to help</p>
         </AnimatedSection>
         <AnimatedSection>
             <section className="mt-12 px-4 sm:px-8 lg:px-20 py-10 pb-16 bg-[#0f3b46]">
-  <div className="grid grid-cols-1 lg:grid-cols-2">
+  <div className="grid gap-x-3.5 grid-cols-1 lg:grid-cols-2">
 
     {/* LEFT – CONTACT FORM */}
-    <div className="px-4 sm:px-10 lg:px-16 py-10 sm:py-16 text-white">
+    <div className=" text-white">
       <p className="text-sm tracking-widest text-gray-300 mb-2">
         CONTACT US
       </p>
@@ -160,7 +160,7 @@ and we will be happy to help</p>
         {/* Button */}
         <button
           type="submit"
-          className="mt-4 inline-block border border-blue-400 text-white px-8 py-3 rounded-full hover:bg-blue-500 transition"
+          className="mt-4 inline-block border border-blue-400 text-white px-8 py-3 rounded-full hover:bg-blue-800 transition"
         >
           Submit Message
         </button>

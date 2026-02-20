@@ -370,7 +370,7 @@ export default function Home() {
   </section>
 </AnimatedSection>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <main className="mt-12 px-4 sm:px-8 lg:px-20 pb-16">
         <AnimatedSection>
       <Offerstabs />
       </AnimatedSection>
@@ -615,7 +615,7 @@ export default function Home() {
     </AnimatedSection>
 <div>
   <AnimatedSection>
-<section className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+<section className="mt-12 px-4 sm:px-8 lg:px-20 pb-16">
   <div className="grid grid-cols-1 md:grid-cols-2 bg-white shadow-lg overflow-hidden rounded-lg">
 
     {/* Left Image */}
@@ -667,8 +667,8 @@ export default function Home() {
     
 </div>
 <AnimatedSection>
-<section className="py-12 sm:py-16 bg-white">
-  <div className="max-w-6xl mx-auto px-4 sm:px-6">
+<section className="mt-12 px-4 sm:px-8 lg:px-20 pb-16 bg-white">
+  <div className="">
 
     {/* Heading */}
     <h4 className="text-blue-600 font-semibold text-sm sm:text-base">
@@ -777,8 +777,8 @@ export default function Home() {
 </AnimatedSection>
 
 <AnimatedSection>
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="mt-12 px-4 sm:px-8 lg:px-20 pb-16 bg-gray-50">
+      <div className="">
         <h2 className="text-3xl text-black md:text-4xl font-bold mb-10">
           Latest Travel Articles
         </h2>

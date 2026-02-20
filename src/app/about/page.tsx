@@ -29,7 +29,7 @@ Founded in 2009, we are a proudly IATA-certified and accredited travel agency, b
     </div>
     </AnimatedSection>
     <AnimatedSection>
-      <section className="mt-12 px-4 sm:px-8 lg:px-20 py-10 pb-16 bg-[#eef3f7] py-10 px-4">
+      <section className="mt-12 px-4 sm:px-8 lg:px-20 py-10 pb-16 bg-[#eef3f7]">
       <div className=" bg-white rounded-lg shadow-md overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           
@@ -77,13 +77,13 @@ Founded in 2009, we are a proudly IATA-certified and accredited travel agency, b
     </section>
     </AnimatedSection>
     <AnimatedSection>
-     <div className="mt-12 px-4 sm:px-8 lg:px-20 py-10 pb-16 bg-black text-white">
+     <div className=" px-4 sm:px-8 lg:px-20 py-10 pb-16 bg-[#DBE9F4] text-black">
     
       <div className="flex flex-col lg:flex-row gap-10 items-center">
     
         {/* Text Section */}
         <div className="w-full lg:w-[40%]">
-          <p className="text-blue-500 text-lg sm:text-2xl">
+          <p className="text-blue-900 text-lg sm:text-2xl">
             Get About Us
           </p>
     
