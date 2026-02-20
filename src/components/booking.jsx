@@ -19,7 +19,7 @@ if (!isOpen) return null;
 
           <div className="flex items-center gap-3 mb-4">
             <span className="text-3xl">🗓️</span>
-            <h2 className="text-lg md:text-xl font-semibold">Manage your booking</h2>
+            <h2 className="text-lg text-black md:text-xl font-semibold">Manage your booking</h2>
           </div>
 
           <p className="text-sm md:text-base text-gray-600">

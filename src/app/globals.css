@@ -18,13 +18,14 @@
     --foreground: #ededed;
   }
 }
-
+h1, h2, h3 { font-family: var(--font-montserrat); }
+p, span, li { font-family: var(--font-lora); }
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: 'Playfair Display', serif;
-  font-family: 'Inter', sans-serif;
+  background: var(--background); 
+  color: var(--foreground); 
+  font-family: var(--font-lora);
 }
+h1, h2, h3 { font-family: var(--font-montserrat); }
 .swiper .swiper-button-next::after,
 .swiper .swiper-button-prev::after {
   font-size: 10px !important;

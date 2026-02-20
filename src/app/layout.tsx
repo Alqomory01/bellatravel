@@ -5,24 +5,39 @@ import { Providers } from "./providers";
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import { Montserrat, Lora } from 'next/font/google';
 
-
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const poppins = Poppins({
-  subsets: ['latin'], 
-  weight: ['400', '500', '600', '700'], 
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['600', '700'],
+  variable: '--font-montserrat',
   display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const lora = Lora({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  display: 'swap',
 });
+
+
+
+
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
+
+// const poppins = Poppins({
+//   subsets: ['latin'], 
+//   weight: ['400', '500', '600', '700'], 
+//   display: 'swap',
+// });
+
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Bella Maria Travels & Tours",
@@ -37,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased ${poppins.className}`}>
+        className={`${montserrat.className} ${lora.className}`}>
        <Providers>
         <Header/>
         {children}
