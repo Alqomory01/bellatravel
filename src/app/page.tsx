@@ -454,13 +454,13 @@ export default function Home() {
 
     </AnimatedSection>
         <AnimatedSection>
-    <div className="mt-12 px-4 sm:px-8 lg:px-20 py-10 pb-16 bg-black text-white">
+    <div className="mt-12 px-4 sm:px-8 lg:px-20 py-10 pb-16 bg-[#DBE9F4] text-black">
 
   <div className="flex flex-col lg:flex-row gap-10 items-center">
 
     {/* Text Section */}
     <div className="w-full lg:w-[40%]">
-      <p className="text-blue-500 text-lg sm:text-2xl">
+      <p className="text-blue-900 text-lg sm:text-2xl">
         Get About Us
       </p>
 

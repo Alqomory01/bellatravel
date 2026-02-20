@@ -30,21 +30,21 @@ const [menuOpen, setMenuOpen] = useState(false);
         <header className="w-full">
 
   {/* Top Bar */}
-  <div className="bg-white text-xs sm:text-sm py-3 sm:py-4 px-4">
-    <div className="max-w-7xl mx-auto flex flex-col sm:flex-row gap-3 sm:gap-0 justify-between items-center">
+  <div className="bg-white text-xs px-4 sm:px-8 lg:px-20 py-4 ">
+    <div className="flex flex-col sm:flex-row gap-3 sm:gap-0 justify-between items-center">
 
       {/* Left Info */}
       <div className="flex justify-between sm:flex-row gap-2 sm:gap-6 text-gray-700">
         <div className="flex items-center gap-1">
-          <MdOutlineMailOutline className="text-base sm:text-lg" />
-          <a href="mailto:bellamariatravels.com" className="hover:text-pink-600">
+          <MdOutlineMailOutline className="text-base sm:text-lg " />
+          <a href="mailto:bellamariatravels.com" className="font-bold hover:text-blue-600">
             bellamariatravels.com
           </a>
         </div>
 
         <div className="flex items-center gap-1">
           <MdCall className="text-base sm:text-lg" />
-          <span>+(805) 236 0408</span>
+          <span className="font-bold">+234(805) 236 0408</span>
         </div>
       </div>
 
@@ -77,7 +77,7 @@ const [menuOpen, setMenuOpen] = useState(false);
       isSticky ? "fixed top-0 left-0 right-0 shadow-md" : ""
     }`}
   >
-    <div className="relative max-w-7xl mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
+    <div className="relative px-4 sm:px-8 lg:px-20 py-4  flex justify-between items-center">
 
       {/* Logo */}
       <Link href="/" className="flex items-center">
