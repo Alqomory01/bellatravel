@@ -6,7 +6,7 @@ if (!isOpen) return null;
 return(
     <div>
             
-            <h3 className="text-black">SignUp / Login</h3>
+            {/* <h3 className="text-black">SignUp / Login</h3> */}
             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4">
       <div className="relative flex flex-col md:flex-row
       w-full max-w-4xl
